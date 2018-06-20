@@ -57,6 +57,30 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        WXSHARE.config({ debug: false });
+        WXSHARE.ready(function() {
+        var option = {
+            title: "2018@毕业纪念册",
+            link: "http://wx.idsbllp.cn/nodejs/graduationSeason/produce",
+            imgUrl: 'http://wx.idsbllp.cn/nodejs/graduationSeason/public/images/xiaohui.jpg',
+            desc: '一朝重邮人，一生重邮情',
+            type: '',
+            success: function() {
+                console.log('分享成功');
+            },
+            cancel: function() {
+                console.log('取消分享');
+            },
+        };
+        wx.onMenuShareTimeline(option);
+        wx.onMenuShareAppMessage(option);
+        wx.onMenuShareQQ(option);
+        wx.onMenuShareWeibo(option);
+        wx.onMenuShareQZone(option);
+    });
+    </script>
     
 </body>
 </html>
