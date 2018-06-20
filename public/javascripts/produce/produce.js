@@ -66,7 +66,7 @@ var words = [{
 function check() {
     if ((localStorage.getItem('username') == undefined) || (localStorage.getItem('img') == undefined)) {
         alert('请完善信息');
-        $(location).attr('href', '/')
+        // $(location).attr('href', '/')
     }
 }
 
